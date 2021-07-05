@@ -1,0 +1,718 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K's Portfolio</title>
+</head>
+	
+<style>
+	
+	body{
+		background-color:currentColor;
+		background-color:currentColor;
+		background-image: url("IMAGES /augustine-wong-3Om4DHcaAc0-unsplash.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	
+	.navigate{
+		overflow:hidden;
+		position:fixed;
+		display: block;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		z-index:5;
+	}
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+	  position:fixed;
+	  margin-top: 0.6em;
+		z-index:5;
+	}
+
+	li{
+	  float: left;
+	}
+
+	li a{
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding-top: 14px;
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  padding-bottom: 0px;
+	  text-decoration: none;
+	  font-family: 'Fira Sans';
+	  z-index:10;
+		
+	}
+
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	  z-index:10;
+	}
+	
+	.active{
+		text-decoration: none;
+		font-weight:900;
+		z-index:10;
+	}
+	
+	.containerlink{
+		position:relative;
+		width:100%;
+		
+	}
+	.overlay a{
+		color:white;
+		text-decoration: none;
+		font-weight: bolder;
+		
+	}
+	
+	.overlay:hover{
+		font-style:italic;
+	}
+	
+	.overlay{
+		position: absolute;
+		font-family: 'Fira Sans';
+		bottom:0;
+		background:black;
+		background: rgb(0,0,0,0,0.5);
+		color:transparent;
+		width:32%;
+		opacity:0;
+		color: white;
+		font-size: 18px;
+		padding: 20px;
+		text-align:right;
+		line-height:20px; 
+	}
+	
+	.containerlink:hover .overlay{
+		opacity:1;
+	}
+	
+
+			
+	#myBtntop {
+ 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px 7px;
+
+}
+
+#myBtntop:hover {
+  background-color: black;
+}
+	
+	
+	.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+z-index: -4;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+	
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+	
+  }
+}
+	
+	
+	.emptyspace{
+		margin-top: 300px;
+	}
+
+	
+	.introtext{
+		margin-left: 3.5em;
+		margin-right:3.5em;
+		float: left;
+		margin-top: 10em;
+	}
+	
+	
+	
+	.projectheader{
+		margin-top: 600px;
+		color:black;
+		font-family: 'Fira Sans';
+		display: block;
+	}
+		
+	.projects{
+	width: 500px;
+	margin-left: 3.5em;
+	margin-right: 3.5em;
+	margin-top:1000px;
+	}
+	
+	
+	
+	.projectname{
+		color:black;
+		font-family:'Fira Sans';
+		display: inline-block;
+		font-size: 13vw;
+		margin-top:0.1em;
+		margin-bottom:0.1em;
+	}
+	
+	.movep{
+		font-family: 'Fira Sans';
+		font-weight: bolder;
+		
+	}
+	
+	
+	.buttonmove0{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: -10px;
+	  margin-left: 400px;
+	  
+	}
+	
+	.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 100px;
+	  margin-left: 400px;
+	  
+	}
+
+	@keyframes myfirst {
+		0%{background:black; bottom:0px;top:30px;}
+		25%{background:black; bottom:30px; top:0px;}
+		
+	}
+	
+	.buttonmove2{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: left;
+	  margin-right:2em;
+	  animation: mysecond 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 100px;
+	  
+	}
+
+
+	@keyframes mysecond {
+		0%{background:black; top:60px; bottom: 10px;}
+		25%{background: black; top:10px; bottom:60px;}
+	    
+	}
+	
+	.buttonmove3{
+	  width: 1000px;
+	  height: 500px;
+	  background: transparent;
+	  position: relative;
+	  float: left;
+	  margin-left:-45em;
+	  animation: mythird 2s;
+	  animation-iteration-count: 1;
+	  animation-fill-mode: forwards;
+	  margin-top: -300px;
+	  z-index:-2;
+	}
+	  
+	
+	@keyframes mythird {
+		from {left: -40px;}
+  		to {left: 160px; background-color: transparent;}
+		
+	}
+		
+	.containerteaserpic{
+		position: relative;
+		width: 100%;
+		max-width: 600px;
+		margin-left: -2em;
+		display: block;
+		
+	}
+	
+	.containerteaserpic img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	
+
+	p{
+		color:black;
+		font-family: 'Fira Sans';
+		max-width: 400px;
+		margin: 0px;
+		display:block;
+	}
+
+	
+	.rotatetext{
+		transform: rotate(270deg);
+		postion: absolute;
+		margin-top: 100px;
+		margin-right: 1000px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		
+	}
+	
+	.rotateproject{
+		position:relative;
+		transform: rotate(90deg);
+		margin-left: 140px;
+		margin-top:-10px;
+	}
+	
+	h7{
+		color: black;
+		font-family:'Fira Sans';
+	
+	}
+	
+	
+	h5{
+		color: black;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		font-size:28vw;
+		float: right;
+		margin-top: 20px;
+		margin-right: 35vw;
+		line-height: 25vw;
+		
+	}
+	
+	h4{
+		color:black;
+		font-weight: normal;
+		font-family: 'Fira Sans';
+		display: block;
+
+	}
+	
+	.imghand{
+		width: 20%;
+		float: right;
+		padding-left:80px;
+		margin-bottom: 5em;
+	}
+	
+*{
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+
+.row:after {
+	margin-top: 200px;
+	display: table;
+	clear: both;
+	
+}
+
+	
+	
+	
+	@media screen and (min-width:1000px){
+		.navigate{
+			overflow: hidden;
+			position: fixed;
+			margin-top: 8em;
+			margin-right: 3.5em;
+			display: inline;
+			margin-left:70%;
+			z-index:4;
+		}
+		.container{
+			position: relative;
+			top: -10em;
+		}
+		
+			.buttonmove1{
+
+			position: relative;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			margin-right:10em;
+			margin-left:85%;
+		}
+		
+		.row{
+			margin-top:700px;
+			position:absolute;
+			z-index:-1;
+		}
+		
+		
+		.introtext{
+			margin-top: -15em;
+			display: block;
+			width: 100%;
+			margin-bottom:800px;
+		}
+		
+		.Iam{
+			margin-top:0em;
+			margin-bottom:2em;
+			display: block;
+		}
+		
+		
+		.buttonmove3{
+			postion: relative;
+			margin-top: -784px;
+			margin-left: 10px;
+		
+		}
+		
+		
+		.projects{
+			margin-right: 3.5em;
+			margin-top: 0em;
+			display: block;
+		}
+		
+		.projects h3{
+			margin-top:20em;
+			display:block;
+		}
+		
+		.projectheader h4{
+		margin-top: 20em;
+		color:black;
+		font-family: 'Fira Sans light';
+		display: block;
+	}
+	
+		.projectname{
+		color:black;
+		font-family:'Fira Sans';
+		display: block;
+		font-size: 13vw;
+		margin-top:0.1em;
+		margin-bottom:0.1em;	
+		}
+		
+		h5{
+		color: black;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		font-size:20vw;
+		float: left;
+		margin-top: 160px;
+		margin-right: 100px;
+		line-height: 18vw;
+		
+	}
+
+	.rotatetext{
+		transform: rotate(0deg);
+		postion: absolute;
+		margin-top: 100px;
+		margin-right: 1000px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}	
+	}
+		
+		
+	}
+
+
+	
+	
+</style>
+	
+	
+	
+
+<body>
+
+	<div class="container">
+	
+	<div class="navigate">
+		<nav>
+			<ul>
+			  <li><a href="3 Kportfolio about me.html">About Me</a></li>
+			  <li><a href="2 Kportfolio Contact.html">Contact</a></li>
+			  <li><a class="active" href="1 Kportfolio Work Kopie.html">Work</a></li>
+			  <li><a href="index.html">K</a></li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+	
+	<div class="rotatetext">
+		<h5>
+		MY <br> WORK
+		</h5>
+	
+	</div>
+	
+	<div class="buttonmove3">
+	<img class="imghand" src="IMAGES /20210131_173545 Kopie 4.jpg" alt="My Hand"></div>
+	
+	
+	<div class="buttonmove0">
+		<p class="movep">  <br></p>
+	</div>
+	
+	<div class="rotateproject">
+		<h7>
+		2019 to 2021
+		</h7>
+	</div>
+	
+	
+		
+
+	<div class="emptyspace"></div>
+	
+	
+	
+	
+	
+	<div class="row"> 
+  <div class="column">
+	  
+	  	<div class="containerlink">
+    <img src="IMAGES /Innenseite 5.jpg" alt="Typographic sculpture" style="width:100%">
+	  <div class="overlay"> <a href="blnkWKportfolio .html">[blnk] <br> MAGA <br> ZINE </a>
+	  </div>
+	  </div>
+	  
+	  
+	  	<div class="containerlink">
+   <img src="IMAGES /IMG_2385 2 Kopie.jpg" alt="Analysis book" style="width:100%">
+		<div class="overlay"> 
+			<a href="032cWKportfolio.html">
+			032c <br> ANA <br> LYSIS <br> </a>
+			</div>
+			</div>
+	  
+	 
+	
+  </div>
+		
+		
+  <div class="column">
+	 
+	  <div class="containerlink">
+    <img src="IMAGES /1quaritsch-photography-m2zuB8DqwyM-unsplash Kopie.jpg" alt="Website relaunch" style="width:100%">
+	  <div class="overlay"> <a href="TaekWKPortfolio.html">WEB <br> SITE <br> TKD</a>
+	  </div>
+	  </div>
+	  
+	   <div class="containerlink">
+    <img src="IMAGES /Element 2@4x.png" style="width:100%">
+		  <div class="overlay"> 
+			<a href="muemaWKportfolio.html">
+			CORPO <br> RATE <br> IDEN <br> TITY </a>
+			</div>
+	 		</div>
+	  
+	
+
+  </div>
+ <div class="column">
+	 
+	 	  
+	<div class="containerlink">
+    <img src="IMAGES /IMG_2289 2 Kopie.jpg" alt="Traffic Museum of Germany" style="width:100%">
+		  <div class="overlay"> 
+			<a href="VKZWKportfolio.html">
+			GUI <br> DANCE <br> SYS <br> TEM  </a>
+			</div>
+			</div>
+	
+	  <div class="containerlink">
+    <img src="IMAGES /Gegenräume.jpg" alt="ROCKWELL Analysis" style="width:100%">
+		  <div class="overlay"> 
+			<a href="RockwellWKportfolio Kopie.html">
+			ROCK <br> WELL <br> ANA <br> LYSIS  </a>
+			</div>
+			</div>
+	  
+	  
+	
+  </div>
+<div class="column">
+	  
+	  	 
+	  <div class="containerlink">
+    <img src="IMAGES /IMG_2231 Kopie.jpg" alt="Jobmatching-Campaign for AWO Munich" style="width:100%">
+		  <div class="overlay"> 
+			<a href="AWOWKPortfolio.html">
+			SOCIAL <br> CAM <br> PAIGN <br> AWO </a>
+			</div>
+			</div>
+	  
+
+	  
+	  <div class="containerlink">
+    <img src="IMAGES /vita jpegs/IMG_3282 Kopie.jpg" alt="Artis's Vita Flyer" style="width:100%">
+		  <div class="overlay"> 
+			<a href="VitaWKPortfolio.html">
+			AR <br> TIST'S <br> VITA </a>
+			</div>
+			</div>
+  </div>
+		
+		<div class="emptyspace"></div>
+	
+   
+		 <div class="buttonmove1">
+			<p class="movep"> </p>
+			 <button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+		</div>
+		
+		
+<div class="emptyspace"></div>
+
+	
+	
+	
+	
+	
+		
+	
+<script>
+	
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+} 
+	
+	
+		
+		
+		var mybutton = document.getElementById("myBtntop");
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	
+	</script>
+	
+	
+	
+	
+	
+	
+
+	
+	
+</body>
+</html>

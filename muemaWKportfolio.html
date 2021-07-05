@@ -1,0 +1,541 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K's Portfolio</title>
+</head>
+	
+<style>
+	
+	
+	.buttonmove2{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: left;
+	  margin-right:2em;
+	  animation: mysecond 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 20px;
+		margin-left:80%;
+		margin-bottom:100px;
+	  
+	}
+	
+
+
+	@keyframes mysecond {
+		0%{background: black; top:60px; bottom: 10px;}
+		25%{background:black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+	
+	#myBtntop {
+ 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px 7px;
+	
+
+}
+
+#myBtntop:hover {
+  background-color: black;
+}
+	
+	
+	
+	
+	
+		.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: -10px;
+	  
+	}
+
+
+	@keyframes myfirst {
+		0%{background:black; top:60px; bottom: 10px;}
+		25%{background: black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+ *{
+  box-sizing:border-box;
+}
+
+
+	
+body {
+  margin: 0;
+  font-family: 'Fira Sans';
+}
+
+.container {
+  padding: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 10px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size:2em;
+}
+
+.xlarge-font {
+  font-size: 2em;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: left;
+  }
+  img {
+    margin: auto;
+  }
+}
+	
+	
+	
+	body{
+		background-color:currentColor;
+		background-color:currentColor;
+		background-image: url("IMAGES /augustine-wong-3Om4DHcaAc0-unsplash.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	h4{
+		font-size:2em;
+		font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		margin-top:10px;
+	}
+	
+		
+	
+	.emptyspace{
+		margin-top: 300px;
+	}
+
+	
+	.navigate{
+		position:absolute;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		margin-top: -100px;
+		z-index:4;
+	}
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+      position:fixed;
+	  z-index:4;
+	}
+
+	li{
+	  float: left;
+		z-index:4;
+	}
+
+	li a{
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding-top: 14px;
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  padding-bottom: 0px;
+	  text-decoration: none;
+	  font-family: 'Fira Sans';
+	  z-index:4;
+		
+	}
+
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	}
+	
+	.active{
+		font-weight:900;
+	}
+	
+	.movep{
+		font-family: 'Fira Sans';
+		font-weight: bolder;
+	
+		
+	}
+	
+	.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 800px;
+	
+	  
+	}
+
+	@keyframes myfirst {
+		0%{background:black; bottom:0px;top:30px;}
+		25%{background:; bottom:30px; top:0px;}
+		
+	}
+	
+
+	
+	h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-weight:900;
+		font-size:28vw;
+		margin-top: 200px;
+		margin-left: 20px;
+		line-height: 25vw;
+		padding-top:180px;
+	}
+	
+	
+	p{
+		color:black;
+		font-size:1.8em;
+		font-family: 'Fira Sans';
+		max-width: 400px;
+		margin-top: 40px;
+		margin-bottom:40px;
+		display:block;
+	}
+	
+
+	
+	
+	@media screen and (min-width:1000px){
+		
+		.img{
+			width: 800px;
+		}
+		
+		.column-66 p{
+			margin-left:300px;
+		}
+		
+		
+		.container{
+			position: relative;
+			top: -10em;
+		}
+		
+		
+		.navigate{
+			position: absolute;
+			margin-top:-91px;
+			margin-right: 3.6em;
+			display: inline;
+			margin-left:70%;
+		}
+		
+		.buttonmove1{
+			position: relative;
+			margin-top: -350px;
+			margin-right:10em;
+		}
+	
+		
+	
+		h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-size:10vw;
+		margin-top: 160px;
+		margin-right: 100px;
+		margin-left: 20px;
+		line-height: 10vw;;
+}
+		
+		
+			.buttonmove2{
+			position: relative;
+			margin-top: 40px;
+			margin-right: 3.5em;
+			margin-left:90%;
+		margin-bottom:100px;
+	  
+	}
+	
+		
+		
+	}
+
+		
+	}
+
+
+	
+	
+</style>
+	
+	
+	
+
+<body>
+
+	
+	
+	<div class="navigate">
+		<nav>
+			<ul>
+			  <li><a href="3 Kportfolio about me.html">About Me</a></li>
+			  <li><a href="2 Kportfolio Contact.html">Contact</a></li>
+			  <li><a class="active" href="1 Kportfolio Work Kopie.html">Work</a></li>
+			  <li><a href="index.html">K</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="rotatetext">
+		<h5>
+		CORPO <br> RATE <br>IDEN <br> TITY 
+		
+		</h5>
+	
+	</div>
+	
+	
+	<div class="buttonmove1">
+		
+	</div>
+	
+	
+	
+	
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+
+      <h4 class="large-font" style="color:black;"></h4>
+      <p>
+		The "Münchner Marionettentheater" (Puppet theatre of Munich) gets a redesign of its identity, that portrays the theatre with all its values and speaks to its audience.
+	</p>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3035 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+  
+
+
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2944 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>The puppet theatre of Munich is well known in and around Munich for its long tradition and connection to people. <br> It has a very good reputation and is a cultural asset in its area.</p>
+    </div>
+  </div>
+</div>
+
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+	 
+  <p> Typical for the "Münchner Marionettentheater" is the puppet and mascot "Kasperl Larifari" who is a figure that is original to the theatre and plays the role of the main host and story teller.
+</p>
+		<p>This figure is therefore immediately associated with the theatre and very likeable to children and adults.</p>
+    </div>
+	  <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2949 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+	  <div class="column-33">
+      <p>To build a solid connection the new Logo of the puppet theatre is created with the figure "Kasperl Larifari" in mind. The abstract form, which connects to Bavarian tradition with its overall rhombic form as well, is supposed to be an abstract visualization of the mascots face and hat.</p>
+		  <p>It is meant to show a joyful character by standing on the tips of its base forms, as humour is very important to the theatre's plays.</p>
+		  <p>The symmetrical rounded forms which overlap, can be viewed as a personnification of the two groups in the audience: Young and old. Both age groups are welcome in the "Münchener Marionettentheater" equally.</p>
+    </div>
+  </div>
+</div>
+	
+	
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2951 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Both rounded forms can also be symbolic for the audience and the actors, since a theatre is dependent on both. They connect and demonstrate the easygoing atmosphere and harmonizing communication between actors and visitors.</p>
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>A second logo is created that is made up of the same or similary shaped forms as the first symbol. The letters MMT are encorporated in the same lively and witful shapes to keep the same vibrations.</p>
+		<p></p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2962 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+	
+	<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2968 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>The font chosen for the new identity is "Basil". <br> This font emphasizes the traditional and happy characteristics through its strong serifs while helping with connecting the abstract symbols to people as humans. </p>
+    </div>
+  </div>
+</div>
+	
+	
+	
+			<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>When it comes to colour. The "Münchner Marionettentheater" comes to live through two playful and neutral colours that can be described as soft pink and a darker violet blue. The colours are supposed to symbolize the topics of many plays shown which are usually fairy tales and fantasy operas.</p>
+		<p></p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2992 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3018 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Applications can use the specified colours as well as black and white. They can help in distinguishing children's tickets from adult's for example.</p>
+		<p>In general, the colours can be combined in posters as liked. <br> The newly created form language can be used to create abstract forms for posters and advertisement. By arranging the forms in different ways figures can be created in a playful way. It is also possible to play with the depiciton of logo and symbol.</p>
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3025 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+  </div>
+</div>
+	
+				<div class="container">
+  <div class="row">
+    <div class="column-33">
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /muema jpegs/2henry-co-21HT36zwLn8-unsplash Kopie 2.jpg" width="600" alt="muema pic" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /muema jpegs/3henry-co-21HT36zwLn8-unsplash Kopie.jpg" width="600" alt="muema pic" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /muema jpegs/henry-co-21HT36zwLn8-unsplash Kopie 2.jpg" width="600" alt="muema pic" height="471" >
+  </div>
+</div>
+	
+	
+
+		<div class="buttonmove2">
+				
+				<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+				
+			</div>
+	
+	
+	
+	
+	
+	
+		<script>
+		
+		
+		var mybutton = document.getElementById("myBtntop");
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	
+
+	
+</body>
+</html>

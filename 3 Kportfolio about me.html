@@ -1,0 +1,595 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K's Portfolio</title>
+</head>
+	
+<style>
+	
+	body{
+		background-color:currentColor;
+		background-color:currentColor;
+		background-image: url("IMAGES /augustine-wong-3Om4DHcaAc0-unsplash.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	
+	.blue{
+		color: #51A0FF;
+		
+	}
+	
+	#myBtntop {
+ 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #51A0FF;
+  color: black;
+  cursor: pointer;
+  padding: 10px 7px;
+
+}
+
+#myBtntop:hover {
+  background-color: black;
+}
+	
+	
+	.emptyspace{
+		margin-top: 300px;
+	}
+
+	.h2{
+		font-display: block;
+		font-family: 'Fira Sans Medium';
+		font-size: 4vw;
+		color:steelblue;
+		margin-left: 0em;
+		margin-right:1em;
+		margin-top: -80px;
+		
+
+	}
+
+	.Iam{
+		font-display: block;
+		font-family: 'Fira Sans';
+		font-size: 1em;
+		color: dimgray;
+		margin-right: 5.1em;
+		margin-left: 0em;
+		width: auto;
+	
+	}
+
+	
+	.introtext{
+		margin-left: 3.5em;
+		margin-right:3.5em;
+		float: left;
+		margin-top: 10em;
+		
+	}
+	
+	.navigate{
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+	}
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+	  position:fixed;
+	}
+
+	li{
+	  float: left;
+	}
+
+	li a{
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding-top: 14px;
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  padding-bottom: 0px;
+	  text-decoration: none;
+	  font-family: 'Fira Sans';
+		font-style:normal;
+		
+	}
+
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	}
+	
+	.active{
+		font-weight:900;
+	}
+	
+	h4 a{
+		color: #51A0FF;
+		text-decoration: none;
+	}
+	h4 a:hover{
+		font-style:italic;
+	}
+	h4{
+		margin-top:-80px;
+		font-size:2em;
+	}
+	
+	#one{
+		margin-top: 900px;
+	}
+	
+
+		
+	.projects{
+	width: auto;
+	margin-left: 3.5em;
+	margin-right: 3.5em;
+	margin-top:-480px;
+		
+	}
+	
+
+	
+	.projectname{
+		color:black;
+		font-family:'Fira Sans';
+		display: inline-block;
+		font-size: 13vw;
+		margin-top: 2em;
+		margin-bottom:0.1em;
+		line-height:1;
+	}
+	
+	.movep{
+		font-family: 'Fira Sans';
+		font-weight: 900;
+		
+	}
+	
+	.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: #51A0FF;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 100px;
+	  
+	}
+
+	@keyframes myfirst {
+		0%{background:#51A0FF; bottom:0px;top:30px;}
+		25%{background:#51A0FF; bottom:30px; top:0px;}
+		
+	}
+	
+	.buttonmove2{
+	  width: 20px;
+	  height: 20px;
+	  background: #51A0FF;
+	  position: relative;
+	  float: left;
+	  margin-right:2em;
+	  animation: mysecond 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 100px;
+	  
+	}
+	
+
+
+	@keyframes mysecond {
+		0%{background: #51A0FF; top:60px; bottom: 10px;}
+		25%{background:black; top:10px; bottom:60px;}
+	    
+	}
+	
+	.buttonmove3{
+	  width: 1000px;
+	  height: 500px;
+	  background: transparent;
+	  position: relative;
+	  float: left;
+	  margin-left:-45em;
+	  animation: mythird 2s;
+	  animation-iteration-count: 1;
+	  animation-fill-mode: forwards;
+	  margin-top: -400px;
+	  z-index:-2;
+	}
+	  
+	
+	@keyframes mythird {
+		from {left: -40px;}
+  		to {left: 160px; background-color: transparent;}
+		
+	}
+		
+
+	
+	.containerteaserpic{
+		position: relative;
+		width: 100%;
+		max-width: 600px;
+		margin-left: -2em;
+		display: block;
+		
+	}
+	
+	.containerteaserpic img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	
+	.containerteaserpic .details{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	    background-color: transparent;
+	    color: aquamarine;
+	    font-size: 3em;
+	    padding: 12px 24px;
+	    border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+	
+		
+	}
+	
+	
+	#teaserpic1{
+		display: block;
+		margin-top: -500px;
+		float: left;
+	}
+	#one{
+		max-width: 1000px;
+	}
+
+	p{
+		color:black;
+		font-family: 'Fira Sans';
+		max-width: 400px;
+		margin: 0px;
+		display:block;
+	}
+
+	
+	.rotatetext{
+		transform: rotate(270deg);
+		postion: absolute;
+		margin-top: 100px;
+		margin-right: 1000px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		
+	}
+	
+	.rotateproject{
+		position:relative;
+		margin-left: 415px;
+		transform: rotate(90deg);
+	
+	}
+	
+	h7{
+		color: black;
+		font-family:'Fira Sans';
+		
+	
+	}
+	
+	
+	h5{
+		color: #51A0FF;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		font-size:28vw;
+		float: right;
+		margin-top: 20px;
+		margin-right: 100px;;
+		line-height: 25vw;
+		
+	}
+	
+	div h4{
+		margin-top: 40px;
+		
+	}
+	
+	h4{
+	
+		color:black;
+		font-weight:normal;
+		font-family: 'Fira Sans';
+		display: block;
+		
+
+	}
+	
+	
+	img{
+		width: 20%;
+		float: right;
+		padding-left:80px;
+		margin-bottom: 5em;
+	
+
+		
+	}
+	
+	.buttonmove2{
+		margin-left:350px;
+	}
+	
+	.imageme{
+		animation: myfirst 1.8s infinite;
+		animation-direction: alternate;
+		
+	}
+	
+	
+	
+	@media screen and (min-width: 1000px){
+		
+		.container{
+			position: relative;
+			top: -10em;
+		}
+		
+		img{
+			float:right;
+			
+		}
+		
+		.one{
+			max-width: 700px;
+			inline: block;
+			margin-top: 300px;
+		}
+		
+		
+		.navigate{
+			position: absolute;
+			margin-top: 8em;
+			margin-right: 3.5em;
+			display: inline;
+			margin-left:70%;
+		}
+		
+		.introtext{
+			margin-top: -15em;
+			display: block;
+			width: 100%;
+			margin-bottom:800px;
+		}
+		
+		.Iam{
+			margin-top:0em;
+			margin-bottom:2em;
+			display: block;
+		}
+		
+		
+		
+		
+		.buttonmove1{
+			position: relative;
+			margin-top: -680px;
+			margin-right:10em;
+		}
+	
+		
+		.buttonmove2{
+			position: relative;
+			margin-top: 40px;
+			margin-right: 3.5em;
+			margin-left:1200px;
+	
+		}
+		
+		.buttonmove3{
+			display: block;
+			margin-top: -880px;
+			margin-left: 10px;
+		}
+		
+		@keyframes mythird {
+		from {left: -40px;}
+  		to {left: 160px; background-color: transparent;}
+		
+	}
+		
+		
+		
+		
+		.projects{
+			margin-right: 3.5em;
+			margin-top: 0em;
+			display: block;
+		}
+		
+		.projects h3{
+			margin-top:1000px;
+			display:block;
+			
+		}
+		
+		#one{
+			max-width:700px;
+			margin-left:100px
+		}
+		
+		.projectheader h4{
+		margin-top: 20em;
+		color:black;
+		font-family: 'Fira Sans';
+		display: block;
+	}
+	
+		.projectname{
+		color:black;
+		font-family:'Fira Sans';
+		display: block;
+		font-size: 1.5vw;
+		margin-top:0.1em;
+		margin-bottom:0.1em;	
+		}
+		
+		h5{
+		color: #51A0FF;
+		font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		font-size:20vw;
+		float: left;
+		margin-top: 160px;
+		margin-right: 100px;
+		line-height: 18vw;
+	}
+
+	.rotatetext{
+		transform: rotate(0deg);
+		postion: absolute;
+		margin-top: 100px;
+		margin-right: 1000px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}	
+	}
+		
+		
+	}
+
+
+	
+	
+</style>
+	
+	
+	
+
+<body>
+
+	<div class="container">
+	
+	<div class="navigate">
+		<nav>
+			<ul>
+			  <li><a class="active" href="">About Me</a></li>
+			  <li><a href="2 Kportfolio Contact.html">Contact</a></li>
+			  <li><a href="1 Kportfolio Work Kopie.html">Work</a></li>
+			  <li><a href="index.html">K</a></li>
+			</ul>
+		</nav>
+	</div>
+	</div>
+	
+	<div class="rotatetext">
+		<h5>
+		ABOUT <br> ME
+		</h5>
+	
+	</div>
+	
+	<div class="buttonmove3">
+	<img src="IMAGES /20210131_173545 Kopie.jpg" alt="That's Me :)"></div>
+	
+	
+	<div class="buttonmove1">
+		<p class="movep">  <br></p>
+		
+	</div>
+	
+	<div class="rotateproject">
+		<h7>
+		*2001
+		</h7>
+	</div>
+		
+		<div class="projects">
+			
+			
+			
+			<section id="one">
+			
+			<h4>
+			Nice to meet you.
+			</h4>
+			
+			
+			
+			<h4> My name is Katharina Lutz.<br>
+			I am a media design student at MD.H in Munich, Germany. I have started my studies in 2019: At this very moment I am in the middle of semester four (second year).  </h4>
+			<h4>
+			I want to be frank:	<br>
+			I used to never know what I wanted to become back in my school days <br> and now I have really found a home in all things graphic design.
+				</h4>
+				
+				<h4>
+			If you asked me to describe myself in a brief way, I would likely say that I am an open-minded and passionate person with a strong sense of justice.</h4>
+				<h4>I aspire to become a creator whose work catches not only the eye but mind and heart equally. </h4>
+			<h4 class="blue">
+			One more thing about me: Blue has always been my favourite colour :)
+			
+			</h4>
+	
+			<h4 class="projectname">
+			Let‘s create something together? <br> Feel free to <a href="2 Kportfolio Contact.html"> contact me. </a>  
+			</h4>
+	
+			
+			<div class="buttonmove2">
+				<p class="movep">  </p>
+				<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+				
+			</div>
+		
+
+			
+			<div class="emptyspace">
+			</div>
+				
+		</section>
+			
+	</div>	
+	
+	<script>
+		
+		
+		var mybutton = document.getElementById("myBtntop");
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	
+</body>
+</html>

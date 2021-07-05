@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K's Portfolio</title>
+</head>
+	
+<style>
+	
+	
+	.buttonmove2{
+	  width: 20px;
+	  height: 20px;
+	  background: #F1FE46;
+	  position: relative;
+	  float: left;
+	  margin-right:2em;
+	  animation: mysecond 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 20px;
+		margin-left:80%;
+		margin-bottom:100px;
+	  
+	}
+	
+
+
+	@keyframes mysecond {
+		0%{background: #F1FE46; top:60px; bottom: 10px;}
+		25%{background:black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+	
+	#myBtntop {
+ 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #F1FE46;
+  color: black;
+  cursor: pointer;
+  padding: 10px 7px;
+	
+
+}
+
+#myBtntop:hover {
+  background-color: black;
+}
+	
+	
+	
+	
+	
+		.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: -10px;
+	  
+	}
+
+
+	@keyframes myfirst {
+		0%{background:black; top:60px; bottom: 10px;}
+		25%{background: black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+ *{
+  box-sizing:border-box;
+}
+
+
+	
+	
+body {
+  margin: 0;
+  font-family: 'Fira Sans';
+}
+
+.container {
+  padding: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 10px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size:2em;
+}
+
+.xlarge-font {
+  font-size: 2em;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: left;
+  }
+  img {
+    margin: auto;
+  }
+}
+	
+	
+	
+	body{
+		background-color:currentColor;
+		background-color:currentColor;
+		background-image: url("IMAGES /augustine-wong-3Om4DHcaAc0-unsplash.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	h4{
+		font-size:2em;
+		font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		margin-top:10px;
+	}
+	
+		
+	
+	.emptyspace{
+		margin-top: 300px;
+	}
+
+	
+	.navigate{
+		position:absolute;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		margin-top: -100px;
+		z-index:4;
+	}
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+      position:fixed;
+	  z-index:4;
+	}
+
+	li{
+	  float: left;
+		z-index:4;
+	}
+
+	li a{
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding-top: 14px;
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  padding-bottom: 0px;
+	  text-decoration: none;
+	  font-family: 'Fira Sans';
+	  z-index:4;
+		
+	}
+
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	}
+	
+	.active{
+		font-weight:900;
+	}
+	
+	.movep{
+		font-family: 'Fira Sans';
+		font-weight: bolder;
+	
+		
+	}
+	
+	.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 800px;
+	
+	  
+	}
+
+	@keyframes myfirst {
+		0%{background:black; bottom:0px;top:30px;}
+		25%{background:; bottom:30px; top:0px;}
+		
+	}
+	
+
+	
+	h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-weight:900;
+		font-size:28vw;
+		margin-top: 200px;
+		margin-left: 20px;
+		line-height: 25vw;
+		padding-top:180px;
+	}
+	
+	
+	p{
+		color:black;
+		font-size:1.8em;
+		font-family: 'Fira Sans';
+		max-width: 400px;
+		margin-top: 40px;
+		margin-bottom:40px;
+		display:block;
+	}
+	
+
+	
+	
+	@media screen and (min-width:1000px){
+		
+		.img{
+			width: 800px;
+		}
+		
+		.column-66 p{
+			margin-left:300px;
+		}
+		
+		
+		.container{
+			position: relative;
+			top: -10em;
+		}
+		
+		
+		.navigate{
+			position: absolute;
+			margin-top:-91px;
+			margin-right: 3.6em;
+			display: inline;
+			margin-left:70%;
+		}
+		
+		.buttonmove1{
+			position: relative;
+			margin-top: -350px;
+			margin-right:10em;
+		}
+	
+		
+	
+		h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-size:10vw;
+		margin-top: 160px;
+		margin-right: 100px;
+		margin-left: 20px;
+		line-height: 10vw;;
+}
+		
+		
+			.buttonmove2{
+			position: relative;
+			margin-top: 40px;
+			margin-right: 3.5em;
+			margin-left:90%;
+		margin-bottom:100px;
+	  
+	}
+	
+		
+		
+	}
+
+		
+	}
+
+
+	
+	
+</style>
+	
+	
+	
+
+<body>
+
+	
+	
+	<div class="navigate">
+		<nav>
+			<ul>
+			  <li><a href="3 Kportfolio about me.html">About Me</a></li>
+			  <li><a href="2 Kportfolio Contact.html">Contact</a></li>
+			  <li><a class="active" href="1 Kportfolio Work Kopie.html">Work</a></li>
+			  <li><a href="index.html">K</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="rotatetext">
+		<h5>
+		WEB <br> SITE <br> TKD
+		
+		</h5>
+	
+	</div>
+	
+	
+	<div class="buttonmove1">
+		
+	</div>
+	
+	
+	
+	
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+
+      <h4 class="large-font" style="color:black;"><b>All about:</b></h4>
+      <p>
+		Designing a new Homepage for "Taekwondo-Zentrum Geisenfeld" <br>
+	
+	</p>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /TKD jpegs webseite/1quaritsch-photography-m2zuB8DqwyM-unsplash Kopie.jpg" alt="imagetkd" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+  
+
+
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /TKD jpegs webseite/2quaritsch-photography-m2zuB8DqwyM-unsplash.jpg" alt="imagetkd" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Taking a totally different approach, this redesign of the taekwondo centre's existing website is meant to visualize sports, tradition — as in taekwondo's origin: Korea — and people all together. <br> The main goal is to capture people's interest for the traditional martial art while still being informative and simple.</p>
+	<p>Simplicity is especially important as people of a wide age range can practice the sport. Community is also one of the strongest beliefs in the "Taekwondo-Zentrum Geisenfeld".
+		</p>
+    </div>
+  </div>
+</div>
+
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+	 
+  <p> The landing page welcomes the visitor with a loop-video of different impressions, <br> that can all be associated with Taekwondo. <br> Since Taekwondo is practiced not only as a sport but also a lifestyle, it is important to transport the correct vibrations. <br> The use of stylistic Hangul strengthens the connection to Korea.
+</p>
+    </div>
+	  <div class="column-66">
+        <img src="IMAGES /TKD jpegs webseite/2,5quaritsch-photography-m2zuB8DqwyM-unsplash.jpg" alt="tkd picture 3" width="600" height="471">
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /TKD jpegs webseite/3,1quaritsch-photography-m2zuB8DqwyM-unsplash Kopie.jpg" alt="tkd picture 4" width="600" height="471">
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /TKD jpegs webseite/inbetweenquaritsch-photography-m2zuB8DqwyM-unsplash Kopie.jpg" alt="imagetkd" width="600" height="471" >
+    </div>
+	  
+	  <div class="column-33">
+      <p>Full-screen images are used instead of much text. <br> Like that it is easy for the visitor to imagine what the sport and especially the training is like at the "Taekwondo-Zentrum Geisenfeld". <br> The pictures are meant to visualize energy, life and excite the visitor like that.</p>
+    </div>
+  </div>
+</div>
+	
+	
+<div class="container" >
+  <div class="row">
+   
+    <div class="column-33">
+      <p>Round buttons lead to subpages, that contain more specific information about each category.</p>
+		 <p>In comparison to the old website, there are now only five main categories: <br>
+		Taekwondo <br>
+		Training <br>
+		Über uns (About us)	<br>
+		Galerie (Gallery) <br></p>
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>The sub-categories can be reached via the menu as well, to ensure an easy user-experience.  </p>
+		<p>The overall layout of the website is kept dark to accentuate the images more. Each sub page uses the same colours that can be found on their teaser page. Like that the user knows which page they are currently exploring. </p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+   
+  </div>
+</div>
+	
+	
+	
+	<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /TKD jpegs webseite/6quaritsch-photography-m2zuB8DqwyM-unsplash.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Typography is kept simple. It is important to not make information difficult to read. </p>
+		<p>That is also the reason for the new styling of the training times table. Typography alone creates structure for the user. </p>
+    </div>
+  </div>
+</div>
+	
+	
+	
+			<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>For many first time visitors prices are an important factor when considering joining a sports club. <br> That is why they are included on the website as a new feature. The style is kept similar to the times table. To not create any confusion the paragraph is named in accentuating colors.</p>
+		
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /TKD jpegs webseite/menüquaritsch-photography-m2zuB8DqwyM-unsplash.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src=" <p>Round buttons lead to subpages, that contain more specific information about each category.</p>" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>This very personal project was created together with Michaela Kappes.</p>
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /TKD jpegs webseite/bottomquaritsch-photography-m2zuB8DqwyM-unsplash.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+  </div>
+</div>
+	
+
+					
+
+		<div class="buttonmove2">
+				
+				<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+				
+			</div>
+	
+	
+	
+	
+	
+	
+		<script>
+		
+		
+		var mybutton = document.getElementById("myBtntop");
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	
+
+	
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K's Portfolio</title>
+</head>
+	
+<style>
+	
+	
+	.buttonmove2{
+	  width: 20px;
+	  height: 20px;
+	  background: #F1FE46;
+	  position: relative;
+	  float: left;
+	  margin-right:2em;
+	  animation: mysecond 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 20px;
+		margin-left:80%;
+		margin-bottom:100px;
+	  
+	}
+	
+
+
+	@keyframes mysecond {
+		0%{background: black; top:60px; bottom: 10px;}
+		25%{background:black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+	
+	#myBtntop {
+ 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px 7px;
+	
+
+}
+
+#myBtntop:hover {
+  background-color: black;
+}
+	
+	
+	
+	
+	
+		.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: -10px;
+	  
+	}
+
+
+	@keyframes myfirst {
+		0%{background:black; top:60px; bottom: 10px;}
+		25%{background: black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+ *{
+  box-sizing:border-box;
+}
+
+
+	
+	
+body {
+  margin: 0;
+  font-family: 'Fira Sans';
+}
+
+.container {
+  padding: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 10px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size:2em;
+}
+
+.xlarge-font {
+  font-size: 2em;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: left;
+  }
+  img {
+    margin: auto;
+  }
+}
+	
+	
+	
+	body{
+		background-color:currentColor;
+		background-color:currentColor;
+		background-image: url("IMAGES /augustine-wong-3Om4DHcaAc0-unsplash.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	h4{
+		font-size:2em;
+		font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		margin-top:10px;
+	}
+	
+		
+	
+	.emptyspace{
+		margin-top: 300px;
+	}
+
+	
+	.navigate{
+		position:absolute;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		margin-top: -100px;
+		z-index:4;
+	}
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+      position:fixed;
+	  z-index:4;
+	}
+
+	li{
+	  float: left;
+		z-index:4;
+	}
+
+	li a{
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding-top: 14px;
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  padding-bottom: 0px;
+	  text-decoration: none;
+	  font-family: 'Fira Sans';
+	  z-index:4;
+		
+	}
+
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	}
+	
+	.active{
+		font-weight:900;
+	}
+	
+	.movep{
+		font-family: 'Fira Sans';
+		font-weight: bolder;
+	
+		
+	}
+	
+	.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 800px;
+	
+	  
+	}
+
+	@keyframes myfirst {
+		0%{background:black; bottom:0px;top:30px;}
+		25%{background:; bottom:30px; top:0px;}
+		
+	}
+	
+
+	
+	h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-weight:900;
+		font-size:28vw;
+		margin-top: 200px;
+		margin-left: 20px;
+		line-height: 25vw;
+		padding-top:180px;
+	}
+	
+	
+	p{
+		color:black;
+		font-size:1.8em;
+		font-family: 'Fira Sans';
+		max-width: 400px;
+		margin-top: 40px;
+		margin-bottom:40px;
+		display:block;
+	}
+	
+
+	
+	
+	@media screen and (min-width:1000px){
+		
+		.img{
+			width: 800px;
+		}
+		
+		.column-66 p{
+			margin-left:300px;
+		}
+		
+		
+		.container{
+			position: relative;
+			top: -10em;
+		}
+		
+		
+		.navigate{
+			position: absolute;
+			margin-top:-91px;
+			margin-right: 3.6em;
+			display: inline;
+			margin-left:70%;
+		}
+		
+		.buttonmove1{
+			position: relative;
+			margin-top: -350px;
+			margin-right:10em;
+		}
+	
+		
+	
+		h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-size:10vw;
+		margin-top: 160px;
+		margin-right: 100px;
+		margin-left: 20px;
+		line-height: 10vw;;
+}
+		
+		
+			.buttonmove2{
+			position: relative;
+			margin-top: 40px;
+			margin-right: 3.5em;
+			margin-left:90%;
+		margin-bottom:100px;
+	  
+	}
+	
+		
+		
+	}
+
+		
+	}
+
+
+	
+	
+</style>
+	
+	
+	
+
+<body>
+
+	
+	
+	<div class="navigate">
+		<nav>
+			<ul>
+			  <li><a href="3 Kportfolio about me.html">About Me</a></li>
+			  <li><a href="2 Kportfolio Contact.html">Contact</a></li>
+			  <li><a class="active" href="1 Kportfolio Work Kopie.html">Work</a></li>
+			  <li><a href="index.html">K</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="rotatetext">
+		<h5>
+		GUID <br> ANCE <br>SYS <br> TEM 
+		
+		</h5>
+	
+	</div>
+	
+	
+	<div class="buttonmove1">
+		
+	</div>
+	
+	
+	
+	
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+
+      <h4 class="large-font" style="color:black;"></h4>
+      <p>
+		
+	</p>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" alt="vkz image 1" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+  
+
+
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3116 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Since the "Deutsches Verkehrszentrum" (Museum of German traffic history in Munich) does not have a very up to date guidance system for its visitors, <br> the challenge was to develop a new guide of orientation for the three industrial style buildings.</p>
+    </div>
+  </div>
+</div>
+
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+	 
+  <p> To get a better understanding of the exhibition and halls, a personal visit was essentially helpful. The current situation is analyzed in a book that functions as an analysis as well as a style guide for the newly designed guidance system.
+</p>
+    </div>
+	  <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3123 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+	  <div class="column-33">
+      <p></p>
+    </div>
+  </div>
+</div>
+	
+	
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3126 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>The new guidance systems pictograms are based on the three halls architecture, that shows characteristics of tall grid-like windows and buttresses.</p>
+		<div class="column-66">
+		 <img src="IMAGES /verkehrszentrum jpegs/IMG_3127 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+		<div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3128 Kopie.jpg" alt="image vkz" width="600" height="471" >
+    </div>
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>To match the topic of traffic, that the museum's exhibitions are all about, the symbols are completed by the font DIN Alternate which is the font used in the German traffic system. It does match the tall industrial overall style well. </p>
+		<p></p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3130 Kopie.jpg" alt="image vkz" width="600" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3132 Kopie.jpg" alt="image vkz" width="600" height="471" >
+	  </div>
+  </div>
+</div>
+	
+	
+	
+	<div class="container" >
+  <div class="row">
+	  <div>
+    <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3133 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+	  <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3134 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+	   <img src="IMAGES /verkehrszentrum jpegs/IMG_3137 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>When it comes to colour, each of the three individual halls is assigned a certain colour that is chosen according to the main topic of each hall's exhibition.</p>
+		<p>All signs in each hall are presented in the appointed colour to ensure an easiere orientation of the visitor: <br> No matter where in the hall a person is at, the colour of the orientation system in the specific hall let's them know in which hall they are currently at.</p>
+    </div>
+  </div>
+</div>
+	
+	
+	
+			<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>The first hall gets assigned an orange colour that is supposed to represent the liveliness and modernism in city traffic. </p>
+		<p>The center of attention in the second hall belongs to travelling and its history. That is why a darker magenta is chosen to embody new experiences, the duration and time as well as exotic foreign countries.</p>
+		<p>Lastly, a color that can be best described as a mixture of green and blue is found in hall number three. <br> The main topic here is mobility and technologies concerning traffic in the future. The colour is supposed to be associated with velocity and sustainability.</p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3129 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container" >
+  <div class="row">
+  
+    <div class="column-33">
+      <p>A speciality in the colour scheme can be found with arrows and the pictograms symbolizing the three halls. </p>
+		<p>In these special cases where the halls meet, colours can be combined in pictograms at a diagonal border. <br> The passages between each hall can be labeled this way. <br> The inspiration for the diagonal color combinations comes from the architecture again: The windows on the roof of each hall are placed at an angle and allow light to fall into the buildings in a similar way.</p>
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" alt="vkz picture 1" width="600" height="471">
+    </div>
+  </div>
+</div>
+	
+				<div class="container">
+  <div class="row">
+    <div class="column-33">
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" width="600" alt="vkz pic" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" width="600" alt="vkz pic" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" width="600" alt="vkz pic" height="471" >
+  </div>
+</div>
+	
+					
+							<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" alt="mockup picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>The sizes for the new symbols are set to three different sizes <br> The biggest size is assigned to the hall's names (hall 1, hall 2, hall 3) since they are hung high in the center of the roof.</p>
+		<p>Middle sized symbols are found where smaller location inside the halls need to be appointed. They would be found higher than eye level which is why they need to be big enough to be seen from a distance as well. Examples would be toilets or the wardrobe. </p>
+		<p> The third and smallest size is chosen for pictograms that are directly linked to an object that is part of the exhibition. They are usually lower than eye level or on eye level. <br> Typical for the museum you would find signs that prohibit touching objects or imply an audio guide station.</p>
+		<p>Arrows that help visitors find their way through the exhibitions can be found on the floor or walls to not distract from any objects.</p>
+		
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /verkehrszentrum jpegs/IMG_3160 Kopie.jpg" alt="vkz mockup picture 1" width="600" height="471">
+    </div>
+  </div>
+</div>
+					
+
+		<div class="buttonmove2">
+				
+				<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+				
+			</div>
+	
+	
+	
+	
+	
+	
+		<script>
+		
+		
+		var mybutton = document.getElementById("myBtntop");
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	
+
+	
+</body>
+</html>

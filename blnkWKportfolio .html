@@ -1,0 +1,558 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K's Portfolio</title>
+</head>
+	
+<style>
+	
+	
+	.buttonmove2{
+	  width: 20px;
+	  height: 20px;
+	  background: #F1FE46;
+	  position: relative;
+	  float: left;
+	  margin-right:2em;
+	  animation: mysecond 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 20px;
+		margin-left:80%;
+		margin-bottom:100px;
+	  
+	}
+	
+
+
+	@keyframes mysecond {
+		0%{background: #F1FE46; top:60px; bottom: 10px;}
+		25%{background:black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+	
+	#myBtntop {
+ 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #F1FE46;
+  color: black;
+  cursor: pointer;
+  padding: 10px 7px;
+	
+
+}
+
+#myBtntop:hover {
+  background-color: black;
+}
+	
+	
+	
+	
+	
+		.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: -10px;
+	  
+	}
+
+
+	@keyframes myfirst {
+		0%{background:black; top:60px; bottom: 10px;}
+		25%{background: black; top:10px; bottom:60px;}
+	    
+	}
+	
+	
+ *{
+  box-sizing:border-box;
+}
+
+
+	
+	
+body {
+  margin: 0;
+  font-family: 'Fira Sans';
+}
+
+.container {
+  padding: 40px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 10px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size:2em;
+}
+
+.xlarge-font {
+  font-size: 2em;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: left;
+  }
+  img {
+    margin: auto;
+  }
+}
+	
+	
+	
+	body{
+		background-color:currentColor;
+		background-color:currentColor;
+		background-image: url("IMAGES /augustine-wong-3Om4DHcaAc0-unsplash.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+	h4{
+		font-size:2em;
+		font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+		margin-top:10px;
+	}
+	
+		
+	
+	.emptyspace{
+		margin-top: 300px;
+	}
+
+	
+	.navigate{
+		position:absolute;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		margin-top: -100px;
+		z-index:4;
+	}
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+      position:fixed;
+	  z-index:4;
+	}
+
+	li{
+	  float: left;
+		z-index:4;
+	}
+
+	li a{
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding-top: 14px;
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  padding-bottom: 0px;
+	  text-decoration: none;
+	  font-family: 'Fira Sans';
+	  z-index:4;
+		
+	}
+
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	}
+	
+	.active{
+		font-weight:900;
+	}
+	
+	.movep{
+		font-family: 'Fira Sans';
+		font-weight: bolder;
+	
+		
+	}
+	
+	.buttonmove1{
+	  width: 20px;
+	  height: 20px;
+	  background: black;
+	  position: relative;
+	  float: right;
+	  margin-right:2em;
+	  animation: myfirst 1.8s infinite;
+	  animation-direction: alternate;
+	  margin-top: 800px;
+	
+	  
+	}
+
+	@keyframes myfirst {
+		0%{background:black; bottom:0px;top:30px;}
+		25%{background:; bottom:30px; top:0px;}
+		
+	}
+	
+
+	
+	h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-weight:900;
+		font-size:28vw;
+		margin-top: 200px;
+		margin-left: 20px;
+		line-height: 25vw;
+		padding-top:180px;
+	}
+	
+	
+	p{
+		color:black;
+		font-size:1.8em;
+		font-family: 'Fira Sans';
+		max-width: 400px;
+		margin-top: 40px;
+		margin-bottom:40px;
+		display:block;
+	}
+	
+
+	
+	
+	@media screen and (min-width:1000px){
+		
+		.img{
+			width: 800px;
+		}
+		
+		.column-66 p{
+			margin-left:300px;
+		}
+		
+		
+		.container{
+			position: relative;
+			top: -10em;
+		}
+		
+		
+		.navigate{
+			position: absolute;
+			margin-top:-91px;
+			margin-right: 3.6em;
+			display: inline;
+			margin-left:70%;
+		}
+		
+		.buttonmove1{
+			position: relative;
+			margin-top: -350px;
+			margin-right:10em;
+		}
+	
+		
+	
+		h5{
+		color: black;
+		opacity: 100%;
+		font-family: 'Fira Sans';
+		font-size:10vw;
+		margin-top: 160px;
+		margin-right: 100px;
+		margin-left: 20px;
+		line-height: 10vw;;
+}
+		
+		
+			.buttonmove2{
+			position: relative;
+			margin-top: 40px;
+			margin-right: 3.5em;
+			margin-left:90%;
+		margin-bottom:100px;
+	  
+	}
+	
+		
+		
+	}
+
+		
+	}
+
+
+	
+	
+</style>
+	
+	
+	
+
+<body>
+
+	
+	
+	<div class="navigate">
+		<nav>
+			<ul>
+			  <li><a href="3 Kportfolio about me.html">About Me</a></li>
+			  <li><a href="2 Kportfolio Contact.html">Contact</a></li>
+			  <li><a class="active" href="1 Kportfolio Work Kopie.html">Work</a></li>
+			  <li><a href="index.html">K</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<div class="rotatetext">
+		<h5>
+		[blnk] <br> MAGA <br>ZINE 
+		
+		</h5>
+	
+	</div>
+	
+	
+	<div class="buttonmove1">
+		
+	</div>
+	
+	
+	
+	
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+
+      <h4 class="large-font" style="color:black;"><b>All about:</b></h4>
+      <p>
+		[architecture] <br>
+	[art] <br>
+	[design] <br>
+	[fashion] <br>
+    [society]
+	</p>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3035 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+  
+
+
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2944 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>[blnk] is a magazine that bravely tests out the limits of the existing human being.</p>
+    </div>
+  </div>
+</div>
+
+	
+<div class="container">
+  <div class="row">
+    <div class="column-33">
+	 
+  <p> Its purpose is to encourage its readers to engage in creative and inspiring actions. <br> With its bold but sometimes ambivalent style [blnk] <br> is supposed to motivate people to thinking out <br> of the box.
+</p>
+    </div>
+	  <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2949 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+	  <div class="column-33">
+      <p>Its main target group are young creators that want to make a positive impact on the world and for the future of society.</p>
+    </div>
+  </div>
+</div>
+	
+	
+<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2951 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>That is why there are several chapters consisting of mainly interviews with fellow creative people, who have found their own unique way of contributing to this society.</p>
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>Setting the focus the development of the individual and positive change in society, <br> [blnk] suggest the possibility of a utopian future <br> while rising awareness on its possible dystopian counterpart, as an article featuring the fictional 'Sibyl System' describes.</p>
+		<p>The magazine comes to life through its strong visual language and expressive photos that are used to communicate with the reader. Especially its chapters featuring artists and their art are presented with many full page pictures. <br> Is that not a way to leave an imprint on people's minds?</p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2962 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+	
+	<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2968 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Like that [blnk] fills the gap where inspiration for strong and young minds is desperately needed with loud and genuine passion. <br>Communication through pictures is especially essential for our modern fast-living world and lifestyle.</p>
+		<p>To capture the eye and also mind of the reader, pictures and typography are frequently used to create a loud composition and therefore urgent way of communication.</p>
+    </div>
+  </div>
+</div>
+	
+	
+	
+			<div class="container">
+  <div class="row">
+    <div class="column-33">
+      <p>To visualize different subjects in their own unique way, the magazine utilizes greyscale images as well. <br> Combinations with colorful and color-coordinated typography are used in different sizes <br> never shying away from crossing an image or just becoming a stylistic device for its aesthetics.</p>
+		<p>While [blnk] seems to combine a lot of different styles of presenting its chapters, each difference contributes to the magazine's looks as a whole, making it harmonize in its contrasts.</p>
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2992 Kopie.jpg" alt="imageblnk" width="600" height="471" >
+    </div>
+  </div>
+</div>
+	
+	
+		<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3018 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>Individuality is what makes the world go round. The article about japanese artist and designer Hiroto Ikeuchi presents cybernetic fashion and funny enough face masks, which is as contemporary as it can get. <br> Loud and uniquely this leads to different topics like modernism and tradition, as well as the ever-present question for sustainability.</p>
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3025 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+  </div>
+</div>
+	
+				<div class="container">
+  <div class="row">
+    <div class="column-33">
+    <div class="buttonmove1">
+		<p class="movep">  <br></p>
+	</div>
+    </div>
+    <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2923 Kopie.jpg" width="600" alt="pictureblnk" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2937 Kopie.jpg" width="600" alt="pictureblnk" height="471" >
+    </div>
+	   <div class="column-66">
+        <img src="IMAGES /blnk webseite_quer_jpegs/IMG_2925 Kopie.jpg" width="600" alt="pictureblnk" height="471" >
+  </div>
+</div>
+	
+					
+							<div class="container" >
+  <div class="row">
+    <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3035 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+    <div class="column-33">
+      <p>"Be inspiring and be inspired" is the main message [blnk] is made to deliver to its readers because we believe that individuality and creativity is what makes the world go round.</p>
+		<p>This magazine was created as a university project and together with Celina Hofmann and Michaela Kappes.</p>
+    </div>
+	   <div class="column-66">
+      <img src="IMAGES /blnk webseite_quer_jpegs/IMG_3025 Kopie.jpg" alt="blnkmagazine picture 1" width="600" height="471">
+    </div>
+  </div>
+</div>
+					
+
+		<div class="buttonmove2">
+				
+				<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+				
+			</div>
+	
+	
+	
+	
+	
+	
+		<script>
+		
+		
+		var mybutton = document.getElementById("myBtntop");
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+	function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+	
+
+	
+</body>
+</html>
