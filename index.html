@@ -68,43 +68,45 @@
 		
 	}
 	
-	.navigate{
-		padding-left: 3.5em;
-		padding-right: 3.5em;
-	}
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  width: 200px;
+		  background-color: transparent;
+		}
+
+		li a {
+		  display: block;
+		  text-align: right;
+		  color: black;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		}
+
+		/* Change the link color on hover */
+		li a:hover {
+		  font-style: italic;
+		  color: black;
+		}
+
+			 ul {
+		  list-style-type: none;
+		margin-left:50px;
+		  padding: 0;
+		  width: 25%;
+		  background-color: transparent;
+		  height: 100%; /* Full height */
+		  position: fixed; /* Make it stick, even on scroll */
+		  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+		}
+
 	
-	ul{
-	  list-style-type: none;
-	  margin: 0;
-	  padding: 0;
-	  overflow: hidden;
-	  background-color: none;
-	  position:fixed;
 	
-	}
-
-	li{
-	  float: left;
-	}
-
-	li a{
-	  font-size: 4em;
-	  display: block;
-	  color: black;
-	  text-align: center;
-	  padding-top: 14px;
-	  padding-left: 16px;
-	  padding-right: 16px;
-	  padding-bottom: 0px;
-	  text-decoration: none;
-	  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
-		
-	}
-
-	li a:hover{
-	  color:black;
-	  font-style:italic;
-	}
+	
+	
+	
+	
 	
 	.active{
 		font-weight:900;
@@ -286,6 +288,18 @@
 		 font-size: 1.5vw;
 			
 		}
+	
+
+	
+	ul{
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: none;
+	  position:fixed;
+	
+	}
 		
 		.navigate{
 			position: absolute;
@@ -298,6 +312,15 @@
 	
 		li a{
 			font-size:2em;
+			 display: block;
+			  color: black;
+			  text-align: center;
+			  padding-top: 14px;
+			  padding-left: 16px;
+			  padding-right: 16px;
+			  padding-bottom: 0px;
+			  text-decoration: none;
+			  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 		
 		.introtext{
 			margin-top: -5em;
