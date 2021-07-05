@@ -78,10 +78,12 @@
 
 		li a {
 		  display: block;
+		  font-size: 4em;
 		  text-align: right;
 		  color: black;
 		  padding: 8px 16px;
 		  text-decoration: none;
+		 font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 		}
 
 		/* Change the link color on hover */
@@ -92,7 +94,8 @@
 
 			 ul {
 		  list-style-type: none;
-		margin-left:50px;
+		margin-top:-20px;
+		margin-left: 200px;
 		  padding: 0;
 		  width: 25%;
 		  background-color: transparent;
@@ -101,11 +104,6 @@
 		  overflow: auto; /* Enable scrolling if the sidenav has too much content */
 		}
 
-	
-	
-	
-	
-	
 	
 	
 	.active{
@@ -291,6 +289,19 @@
 	
 
 	
+	
+	.navigate{
+		position:absolute;
+		padding-left: 3.5em;
+		padding-right: 3.5em;
+		margin-top: -100px;
+		z-index:4;
+		margin-right: 3.6em;
+		display: inline;
+		margin-left:70%;
+		}
+		
+		
 	ul{
 	  list-style-type: none;
 	  margin: 0;
@@ -298,10 +309,19 @@
 	  overflow: hidden;
 	  background-color: none;
 	  position:fixed;
-	
+	 z-index: 4;
 	}
-		
 	
+	li{
+	  float: left;
+		z-index:4;
+	}
+	
+	li a:hover{
+	  color:black;
+	  font-style:italic;
+	}
+
 		li a{
 			font-size:2em;
 			 display: block;
@@ -313,6 +333,10 @@
 			  padding-bottom: 0px;
 			  text-decoration: none;
 			  font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+			  z-index: 4em;
+	
+	
+	
 		
 		.introtext{
 			margin-top: -5em;
