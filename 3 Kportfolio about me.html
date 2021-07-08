@@ -54,34 +54,39 @@
 
 
 			h1{
-				font-size: 20vw;
-				line-height: 15vw;
 				margin-left: 40px;
-				margin-top: 340px;
+				font-family: 'Helvetica';
+				margin-top: 0;
+				font-size: 10vw;
+				text-align: right;
+				line-height: 8vw;
+				z-index:40;
 				}
 
 			.rotatetext{
 				position: absolute;
+				margin-top:300px;
 				}
 			
 
 			.introtext{
 				position: absolute;
-				margin-top: 1400px;
+				margin-top: 1000px;
 				display: block;
-				max-width: 600px;
+				max-width: 700px;
 				margin-right: 0;
-				margin-left: 80px;
+				margin-left: 60px;
+				margin-right: 50px;
 				}
 
 			.introtext h4{
 				font-family: "Helvetica";
 				font-size: 2em;
 				color: #000;
-				max-width: 600px;
+				max-width: 700px;
 				font-weight: normal;
-				margin-bottom: 420px;
-			}
+				margin-bottom:300px;
+				}
 			
 			.title a{
 				background-color: #D7FF00;
@@ -92,6 +97,7 @@
 			.title a:hover {
 				font-style: italic;
 				}
+		
 
 			.buttonmove1{
 				position: fixed;
@@ -119,6 +125,7 @@
 				font-size: 1.5em;
 				border: none;
 				outline: none;
+				margin-bottom:100px;
 				background-color: #D7FF00;
 				color: black;
 				cursor: pointer;
@@ -135,7 +142,8 @@
 				position: relative;
 				float: right;
 				margin-right:-800px;
-				margin-top: 2700px;
+				margin-top: 2500px;
+				margin-bottom: 150px;
 				width: 20px;
 				height: 20px;
 				background: transparent;
@@ -155,22 +163,19 @@
 				position: relative;
 				float: right;
 				margin-right:800px;
-				margin-top: 860px;
+				margin-top: 200px;
 				width: 80px;
 				background: transparent;
 				animation: mythird 2.0s infinite;
 				animation-direction: alternate-reverse;
 				animation-iteration-count: 3;
+				z-index:-3;
 				}
 			
-				.buttonmove3{
-					margin-top:750px;
-					float: right;
-					}
 				
-				.buttonmove3 img{
-					margin-left: 140px;
-					width: 400px;
+			.buttonmove3 img{
+				margin-left: 140px;
+				width: 400px;
 				}
 				
 			.buttonmove3 h4{
@@ -178,7 +183,7 @@
 				font-size: 4em;
 				color:hotpink;
 				margin-left: 140px;
-			}
+				}
 			
 
 			@keyframes mythird {
@@ -187,38 +192,57 @@
 			}
 				
 			
+			h5{
+				font-family:"Helvetica";
+				font-size: 2em;
+				font-weight: normal;
+				margin-bottom:250px;
+				}
+			
+			.say a{
+				color: hotpink;
+				text-decoration: none;
+				background:#D7FF00;
+				}
+				
+				.say a:hover{
+					font-style:italic;
+					}
+			
 			
 			
 			@media screen and (max-width: 768px){
 
+				
+				h1{
+				margin-left: 40px;
+				font-family: 'Helvetica';
+				margin-top: 0;
+				font-size: 10vw;
+				text-align: right;
+				line-height: 8vw;
+				z-index:40;
+				}
+
+				
 				.rotatetext{
 					transform: rotate(270deg);
 					margin-top: 300px;
-					margin-left: -70px;
-				}
-
-				h1{
-					margin-top: 0;
-					font-size: 30vw;
-					line-height: 25vw;
-					}
-
-				.introtext{
-					margin-top: 1400px;
+					margin-left: 0px;
 					}
 
 				.introtext h4{
-					margin-bottom: 360px;
+					margin-bottom:300px;
 					}
 				
 				#myBtntop{
 					margin-left: 10px;
-					
 					}
 
 				.buttonmove2{
 					margin-right:80px;
-					margin-top: 1400px;
+					margin-bottom: 100px;
+					margin-top: 2200px;
 					width: 20px;
 					height: 20px;
 					background: transparent;
@@ -231,42 +255,62 @@
 				.buttonmove3{
 					position: relative;
 					float: right;
-					margin-right:80%;
-					margin-top: 1000px;
+					margin-left:80%;
+					margin-right:520px;
+					margin-top: 300px;
 					width: 80px;
 					height: 80px;
 					background: transparent;
 					animation: mythird 2.0s infinite;
-					animation-direction:alternate-reverse;
+					animation-direction: alternate-reverse;
 					animation-iteration-count: 3;
 					}
 			
-				.buttonmove3{
-					margin-top:1000px;
-					float: right;
-					}
 				
 				.buttonmove3 img{
-					margin-left: 33%;
+					margin-right: -33%;
 					width: 250px;
+					}
+				
+				
+			@keyframes mythird {
+			from {right: 0px;}
+			to {right: 200px; background-color: transparent;}
+			}
+			
+			h5{
+				font-family:"Helvetica";
+				font-size: 6vw;
+				font-weight: normal;
+				margin-bottom:250px;
 				}
+				
 			}
 			
 			
 			
 			@media screen and (max-width: 481px){
 
-				.rotatetext{
+				
+				
+				
+				h1{
+					margin-left: 40px;
+					font-family: 'Helvetica';
+					margin-top: 0;
+					font-size: 10vw;
+					text-align: right;
+					line-height: 8vw;
+					z-index:40;
+					}
+
+			.rotatetext{
 					transform: rotate(270deg);
 					margin-top: 300px;
-					margin-left: -70px;
+					margin-left: 0px;
 				}
 
-				h1{
-					margin-top: 0;
-					font-size: 35vw;
-					line-height: 30vw;
-				}
+			
 
 				.menu a{
 					font-size: 1.5em;
@@ -277,12 +321,12 @@
 
 
 				.introtext{
-					margin-top: 1200px;
+					margin-top: 900px;
 					display: block;
 					max-width: 401px;
 					margin-right: 10px;
 					margin-left: 20px;
-				}
+					}
 
 				.introtext h4{
 					font-family: "Helvetica";
@@ -290,16 +334,20 @@
 					color: #000;
 					max-width: 401px;
 					font-weight: normal;
-					margin-bottom: 450px;
+					margin-bottom: 300px;
 					}
 				
-				#myBtntop{
-					margin-top: 1000px;
-					}
+					
+				h5{
+				margin-bottom:250px;
+				font-size: 10vw;
+				}
+			
 				
 				.buttonmove2{
-					margin-right:70px;
-					margin-top: 520px;
+					margin-left:80%;
+					margin-top: 1800px;
+					margin-bottom:50px;
 					width: 20px;
 					height: 20px;
 					background: transparent;
@@ -308,20 +356,33 @@
 					animation-direction: alternate;
 					}
 				
+				
 				.buttonmove3{
-					margin-top:800px;
+					position: relative;
 					float: right;
+					margin-left:-50%;
+					margin-right:300px;
+					margin-top: 330px;
+					width: 80px;
+					height: 80px;
+					background: transparent;
+					animation: mythird 2.0s infinite;
+					animation-direction: alternate-reverse;
+					animation-iteration-count: 3;
 					}
+			
 				
 				.buttonmove3 img{
-					margin-left: 29%;
+					margin-right: -33%;
 					width: 200px;
-				}
+					}
 				
-					@keyframes mythird {
-			from {left: 0px;}
-			to {left: 80px; background-color: transparent;}
+				
+			@keyframes mythird {
+			from {right: 0px;}
+			to {right: 100px; background-color: transparent;}
 			}
+			
 				
 
 			}
@@ -353,12 +414,12 @@
 
 			<div class="rotatetext">
 				<h1>
-				ABOUT <br> ME <br>
+				 HELLO<br> and <br> SERVUS!
 				</h1>
 			</div>
 
 							<div class="buttonmove3">
-								<img src="IMAGES /20210131_173545 Kopie.jpg" alt="That's Me :)">
+								<img src="20210131_173545 Kopie.jpg" alt="That's Me :)">
 								<h4>*2001</h4>
 								
 							</div>
@@ -372,10 +433,9 @@
 			<div class="introtext">
 			
 			<h4 class="title">
-				Nice to meet you!
-					<br>
-					<br>
-				My name is Katharina Lutz.<br>
+				My name is Katharina Lutz!
+				<br>
+				<br>
 				I am a media design student from the MD.H in Munich (Germany) where I began studying in 2019.
 				Currently I am in the middle of my fourth semester, looking forward to ones to come before I hope to complete my studies with the degree "Bachelor of Arts".
 					<br>
@@ -387,13 +447,12 @@
 					<br>
 				One more thing about me:
 					<br>
-				I live for contrast and experimenting with typography.
-					<br>
-					<br>
-					<br>
-				Got something to say? <br> Feel free to <a href="2 Kportfolio Contact.html"> contact me. </a>  
-			</h4>
-
+				I live for contrast and experimenting with typography ;)
+				</h4>
+				
+				<h5 class="say">
+				Got something <br> to say? <br> Feel free to <br> <a href="2 Kportfolio Contact.html"> contact me. </a>  
+				</h5>	
 			
 			</div>
 
@@ -430,5 +489,4 @@
 		</body>
 
 </html>
-
 
