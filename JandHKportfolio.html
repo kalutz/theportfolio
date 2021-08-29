@@ -1,0 +1,452 @@
+<!doctype html>
+
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>K‘s Portfolio</title>
+		</head>
+
+
+		<style>
+			
+			
+			.subhead{
+				font-weight: 800;
+				font-size: 1.5em;
+				font-family: 'Baskerville','Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+			}
+			
+			html{
+				width: 100%;
+				}
+			 
+			*{
+			  box-sizing:border-box;
+				}
+
+			.containers{
+				padding-top: 800px;
+			}
+
+			.sub{
+				font-weight: normal;
+				font-family:'Helvetica';
+				font-size:1em;
+				margin-top: 550px;
+				
+			}
+			
+			.container {
+			  padding: 40px;
+			}
+
+			.row{
+				margin-top:0px;
+			}
+			
+		
+			.column{
+  			float: left;
+  			width: 50%;
+  			padding: 10px;
+			}
+			
+			.row:after {
+			content: "";
+			display: table;
+			clear: both;
+			}
+
+			.large-font {
+			  font-family:"Baskerville", "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+				font-size:2em;
+				margin-left:80px;
+				max-width:600px;
+			}
+
+			
+
+			img {
+			  display: inline-block;
+			  height: auto;
+			  max-width: 100%;
+			}
+
+				}
+
+			body{
+				background-color:#EEEEEE;
+			}
+
+			.menu{
+				position: fixed;
+				right: 0;
+				z-index: 100;
+				width: 200px;
+				margin-top: 10px;
+				margin-right: 50px;
+
+			}
+
+			.menu a{
+				font-size: 2em;
+				font-family: "Helvetica";
+				color: #000000;
+				text-decoration: none;
+				}
+
+			ul{
+				text-decoration: none;
+				list-style-type: none;
+				text-align: right;
+				}
+
+			li a:hover{
+				color: #000;
+				font-style: italic;
+				}
+
+			.active{
+				font-weight: 800;
+				}
+
+
+			h1{
+				font-family: 'Helvetica';
+				font-size: 10vw;
+				line-height: 10vw;
+				margin-left: 40px;	
+				margin-top:400px;
+				}
+
+			.rotatetext{
+				position: absolute;
+				}
+			
+			.large-font{
+				margin-top:150px;
+				margin-left:0px;
+				font-family: 'Helvetica';
+				}
+			
+			
+			
+			p{
+				font-family: "Helvetica";
+				font-size:1.5em;
+				color: #000;
+				max-width: 600px;
+				font-weight: normal;
+				margin-bottom: 250px;
+				margin-left: 60px;
+				line-height: 1.25em;
+				margin-right:80px;
+				}
+
+
+			.buttonmove1{
+				position: fixed;
+				height: 33px;
+				width: 33px;
+				background: black;
+				border-radius:50%;
+				right: 0;
+				margin-top: 240px;
+				margin-right: 50px;
+				animation: myfirst 2.0s infinite;
+				animation-direction: alternate;
+				z-index: -20;
+				}
+
+			@keyframes myfirst {
+			0%{background:black; bottom:0px;top:80px;}
+			25%{background:black; bottom:30px; top:0px;}
+			}
+
+			.movep{
+				font-family: "Helvetica";
+				margin-right: 0;
+			}
+
+			#myBtntop {
+				font-size: 1.5em;
+				border: none;
+				outline: none;
+				background-color: black;
+				color: #eeeeee;
+				cursor: pointer;
+				padding: 11px 7px;
+			}
+
+
+			#myBtntop:hover {
+				background-color: black;
+			}
+
+
+			.buttonmove2{
+				position: relative;
+				float: right;
+				margin-right:80px;
+				margin-top: -280px;
+				margin-bottom:400px;
+				width: 20px;
+				height: 20px;
+				background: transparent;
+				position: relative;
+				animation: mysecond 2.0s infinite;
+				animation-direction: alternate;
+				
+			}
+			.columnend{
+				display:inline-block;
+				margin-bottom: 400px;
+				
+			}
+			.columnend img{
+				width:100%;
+			}
+
+
+
+			@media screen and (max-width: 768px){
+				
+
+			  .column {
+				width: 100%;
+				text-align: left;
+			  }
+			  img {
+				margin: auto;
+			  }
+				
+				
+				.rotatetext{
+					margin-top: 100px;
+					margin-left: 20px;
+					}
+				
+				.large-font{
+					margin-left:20px;
+					font-size: 1.5em;
+					font-family: 'Helvetica';
+					margin-top: -215px;
+			
+					}
+				
+				p{
+					margin-left:40px;
+					margin-right: 40px;
+					max-width:500px;
+					}
+				
+				.sub{
+					font-size:1em;
+					font-weight:normal;
+					margin-top: 0px;
+					margin-bottom:-100px;
+					}
+
+				.buttonmove2{
+					margin-right:80px;
+					margin-top: -60px;
+					margin-bottom:400px;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					position: relative;
+					animation: mysecond 2.0s infinite;
+					animation-direction: alternate;
+					}
+			}
+			
+			
+			@media screen and (max-width: 481px){
+
+				
+				
+				.rotatetext{
+					margin-top: 80px;
+					margin-left: 0px;
+					}
+				
+				.large-font{
+					margin-left:20px;
+					font-size: 1.5em;
+					font-family: 'Helvetica';
+					margin-top:-230px;
+					}
+				
+				.container{
+					padding:10px;
+					}
+				
+			
+				
+				p{
+				margin-left:20px;
+				margin-right:15px;
+				margin-bottom:30px;
+				}
+				
+				.sub {
+					font-family:'Helvetica';
+					font-weight: normal;
+					font-size:1em;
+					margin-top:20px;
+				}
+
+				.menu a{
+					font-size: 1.5em;
+					font-family: "Helvetica";
+					color: #000000;
+					text-decoration: none;
+					}
+
+
+				.buttonmove2{
+					margin-right:80px;
+					margin-top: 200px;
+					margin-bottom:150px;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					position: relative;
+					animation: mysecond 2.0s infinite;
+					animation-direction: alternate;
+					}
+			
+
+			}
+
+
+
+		</style>
+
+
+		<body>
+			
+			<div class="menu">
+					<ul>
+						<li>
+							<a href="3 Kportfolio about me.html">About Me</a>
+						</li>
+						<li>
+							<a href="2 Kportfolio Contact.html">Contact</a>
+						</li>
+						<li>
+							<a class="active" href="1 Kportfolio Work Kopie.html">Work</a>
+						</li>
+						<li>
+							<a href="index.html">K</a>
+						</li>
+						<li>
+							<a href="theportfolio Imprint.html">I+DP</a>
+						</li>
+					</ul>
+			</div>
+
+
+			<div class="rotatetext">
+				<h1>
+				EXPERIMENTAL <br> VIDEO <br>
+				</h1>
+			</div>
+
+
+			<div class="buttonmove1">
+				<p class="movep"> </p>
+			</div>
+			
+			
+
+<div class="containers">
+	
+<div class="container">
+  <div class="row">
+ <div class="column">
+			 <h4 class="large-font" style="color:black;"><b>The experimental teaser film <br> featuring Jekyll and Hyde </b></h4>
+	 </div>
+    <div class="columnend">
+        <video style="max-width: 100%;"  poster="../../../../GitHub/theportfolio/IMAGES /vid/Bildschirmfoto 2021-08-19 um 08.28.40.png" controls>
+  <source src="../../../../GitHub/theportfolio/IMAGES /vid/JekyllandHyde.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+    </div>
+  </div>
+</div>
+	
+	
+<div class="container" >
+  <div class="row">
+ 
+		<div class="column">
+			<h8 class="subhead"> ABOUT </h8>
+		
+      <p> The goal of the experimental film is to put the focus onto psychological human limits and complex mind in a dystopian way.
+		<br>
+	  	<br>
+		 The famous scottish novel Strange Case of Dr. Jekyll and Mr. Hyde demonstrates how excessive striving might lead to dangerous outcomes for the individual.
+		  <br>
+		  <br>
+		  The chemically induced transformation of the conscientious and likable character Dr. Jekyll into his psychotic counterpart Mr. Hyde becomes the abstract topic of the film.
+		  <br>
+		  <br>
+		  To mess with the viewers eye and mind and to transport the mad atmosphere sounds and images come together experimentally and in a simple color scheme.
+		  <br>
+		  <br>
+		 The colours blue and red come together as an important stylistic device and show the differences, confrontation and transformation of Dr. Jekyll and Mr. Hyde.
+		</p>
+			
+    </div>
+  </div>
+</div>
+
+	
+	
+	
+<div class="container">
+ 
+					
+  <p class="sub">This film is built up with the help of simple objects. <br> Experiments with for example flashlights and ink-colored fluids were a part of the process.</p>
+
+  </div>
+</div>
+						
+			
+
+			<div class="buttonmove2">
+					<p class="movep"> </p>
+					<button onclick="topFunction()" id="myBtntop" title="Go to top">Top</button>
+			</div>
+
+
+
+				<script>
+				var mybutton = document.getElementById("myBtntop");
+				window.onscroll = function() {scrollFunction()};
+
+
+
+				function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+				} else {
+				mybutton.style.display = "none";
+				}
+				}
+
+
+
+				function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+				}
+				</script>
+
+		</body>
+
+</html>
+
